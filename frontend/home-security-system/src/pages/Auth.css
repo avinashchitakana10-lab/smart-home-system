@@ -1,0 +1,44 @@
+/* Fullscreen background container */
+.auth-page {
+  position: fixed;
+  inset: 0; /* shorthand for top:0, left:0, right:0, bottom:0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1e3cff, #4dabff);
+  padding: 20px;
+}
+
+/* Card styling */
+.auth-card {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Input styles */
+.auth-input {
+  height: 44px;
+  border-radius: 8px;
+}
+
+/* Title */
+.auth-title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #111;
+}
+
+/* Buttons */
+.auth-primary-btn {
+  padding: 8px 24px;
+  font-weight: 600;
+}
+
+.auth-secondary-btn {
+  padding: 8px 18px;
+  font-weight: 600;
+}

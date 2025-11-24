@@ -1,0 +1,66 @@
+/* src/components/Sidebar.css (or Layout.css if you keep sidebar styles there) */
+.sidebar {
+  position: relative;       /* <-- ensure absolute children are positioned inside sidebar */
+  width: 240px;
+  background-color: #0d6efd;
+  height: calc(100vh - 56px);
+  color: white;
+  padding: 20px 10px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  box-sizing: border-box;   /* important to avoid padding/width overflow */
+}
+
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar-link {
+  color: #fff !important;
+  font-size: 16px;
+  padding: 12px 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar .icon {
+  font-size: 20px;
+}
+
+.sidebar-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 12px;    /* add horizontal padding to keep the button inside */
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+.logout-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #dc3545 !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 10px 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+/* if you have collapsed sidebar, smaller padding */
+.sidebar.collapsed .logout-link {
+  padding: 8px 6px;
+}
+.logout-link:hover {
+  background: #c82333 !important;
+}
+
